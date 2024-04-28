@@ -12,9 +12,7 @@ COPY requirements.txt classify.py /src/
 
 # install dependencies mentioned in requirements.txt
 RUN pip install --no-cache-dir -r requirements.txt
-RUN pip install --no-cache-dir numpy==1.14.3
-RUN pip install --no-cache-dir torch==1.4.0
-RUN pip install --no-cache-dir torchvision==0.5.0
+
 # Application Environment variables. 
 # These variables will be used when you run the image. 
 # You will also need to pass corresponding DATASET and TYPE variables from the job yaml files of both free-service and default types of jobs.
