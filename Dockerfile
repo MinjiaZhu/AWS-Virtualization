@@ -7,8 +7,8 @@ RUN mkdir /src
 WORKDIR /src
 
 # Installing python dependencies
-# copy current files to src folder
-COPY . /src
+# copy current files to src folder (requirements.txt and classify.py)
+COPY requirements.txt classify.py /src/
 
 # install dependencies mentioned in requirements.txt
 RUN pip install --no-cache-dir -r requirements.txt \
