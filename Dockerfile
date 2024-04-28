@@ -18,7 +18,7 @@ RUN pip install --no-cache-dir -r requirements.txt
 # You will also need to pass corresponding DATASET and TYPE variables from the job yaml files of both free-service and default types of jobs.
 ENV APP_ENV development
 ENV DATASET mnist
-ENV TYPE cnn
+ENV TYPE ff
 
 # Exposing Ports
 EXPOSE 5035
